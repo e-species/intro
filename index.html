@@ -3,12 +3,45 @@ layout: home
 search_exclude: true
 ---
 
-This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
+# **(e)SpEcIEs** | Plataforma abierta para analizar datos de biodiversidad
+
+Las bases de datos de registros de ocurrencias de especies han crecido tanto ultimamente que es difícil imaginar toda al información que esconden. Construimos **(e)SpEcIEs** para abrir nuevas formas de analizar estas bases y descubrir estructuras de relaciones ocultas. Utilizando como materia prima las correlaciones geográficas entre los registros de las especies, (e)SpEcIEs nos permite explorar la complejidad que representan las relaciones registradas implicitamente en repositorios de datos como el [SNIB | Sistema Nacional de Información sobre la Biodiversidad, CONABIO](http://www.snib.mx/ejemplares/descarga/) o [GBIF | Global Biodiversity Information Facility](https://www.gbif.org).
+
+## ¿Qué es **(e)SpEcIEs**?
+
+**SpEcIEs** (Sistema para la Exploración de Información Espacial) es una herramienta web interactiva para analizar bases de datos de ocurrencias de especies desde la perspecitva de conexiones derivadas de las distribuciones geográficas de sus registros. 
+
+## ¿Qué datos se pueden analizar?
+
+**SpEciEs** mantiene una base de datos con aproximadamente **345,000,000** de registros que provienen de los datos de ejemplares en el [SNIB (Sistema Nacional de Información sobre Biodiversidad, CONABIO)](http://www.snib.mx/ejemplares/descarga/) para México y datos de [GBIF](https://www.gbif.org) para [Estados Unidos contiguo](https://doi.org/10.15468/dl.iixcqe), [Centroamérica](https://doi.org/10.15468/dl.r3kg3r) y [Colombia](https://doi.org/10.15468/dl.menapb).
+
+## ¿Qué tipo de análisis puedo hacer con SpEcIEs?
+
+### Análisis de nicho ecológico de una especie o grupo de especies focal.
+
+¿Cómo se relaciona la distribución geográfica de una especie con otros taxones?
+
+¿La distribución de registros de un grupo de especies está más ligada a la distribución de variables climáticas o a las distribuciones de otros grupos de especies?
+
+¿Cuáles son las especies de aves con distribuciones más ligadas a mi especie focal?
+
+En este tipo de análisis definimos una especie (o grupo de especies) focal y analizamos como se relaciona con otros grupos taxonómicos contenidos en la base de datos. Se pueden incluir, además, variables abióticas en el análisis (worldclim, envirem, usgs). 
+
+Este análisis obtiene un ranking de especies y variables abioticas de acuerdo a su grado de correlación geográfica con la especie focal y un mapa interactivo con un gradiente que muestra las áreas con características más favorables y  menos favorables en relación a nuestra especie de interés.
+
+*Componentes principales*: Mapa interactivo y gráfica de barras interactiva para explorar las relaciones de los grupos de especies y variables abióticas con la distribución focal.
+
+### Análisis de las relaciones entre dos grupos de especies con redes de correlación espacial.    
+
+*Componentes principales*: Red de relaciones interactiva ligada a mapa de riqueza, tabla con rankeo de relaciones entre variables 
 
 ![]({{site.baseurl}}/images/diagram.png "https://github.com/fastai/fastpages")
-
-[fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
 
 You can edit the `index.html` file to change this content.
 
 # Posts
+
+# Aknowledgements
+
+This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
+[fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
