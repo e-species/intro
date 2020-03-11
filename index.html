@@ -83,35 +83,50 @@ window.onload = wrap_img;
       <div class="wrapper">
         <div class="home"><h1 id="especies-plataforma-abierta-para-analizar-datos-de-biodiversidad"><strong>(e)SpEcIEs</strong>: Plataforma abierta para analizar datos de biodiversidad</h1>
 
-<p>Las bases de datos de registros de ocurrencias de especies han crecido tanto en los últimos años que es difícil imaginar toda al información que esconden. Construimos <strong>(e)SpEcIEs</strong> para abrir nuevas formas de analizar estas bases y descubrir estructuras de relaciones ocultas. Utilizando como materia prima las correlaciones geográficas entre los registros de las especies, (e)SpEcIEs nos permite explorar la estructura de las relaciones entre especies que se derivan de repositorios de datos como la base de ejemplares del <a href="http://www.snib.mx/ejemplares/descarga/">SNIB (Sistema Nacional de Información sobre la Biodiversidad, CONABIO)</a> o <a href="https://www.gbif.org">GBIF (Global Biodiversity Information Facility)</a>.</p>
+<p>Las bases de datos de registros de ocurrencias de especies han crecido tanto que es difícil imaginar toda al información que esconden.</p>
+
+<p><strong>(e)SpEcIEs</strong> propone nuevas formas para analizar estas bases y descubrir estructuras de relaciones que subyacen ocultas en los datos.</p>
+
+<p>Utilizando como materia prima las correlaciones geográficas entre los registros de las especies, <strong>(e)SpEcIEs</strong> nos permite explorar la estructura de las relaciones entre especies derivadas de grandes repositorios de datos como la base de ejemplares del <a href="http://www.snib.mx/ejemplares/descarga/">SNIB (Sistema Nacional de Información sobre la Biodiversidad, CONABIO)</a> o <a href="https://www.gbif.org">GBIF (Global Biodiversity Information Facility)</a>.</p>
 
 <h2 id="qué-es-especies">¿Qué es <strong>(e)SpEcIEs</strong>?</h2>
 
-<p><strong>SpEcIEs</strong> (Sistema para la Exploración de Información Espacial) es una herramienta web interactiva para analizar bases de datos de ocurrencias de especies desde la perspecitva de conexiones derivadas de las distribuciones geográficas de sus registros.</p>
+<p><strong>SpEcIEs</strong> (Sistema para la Exploración de Información Espacial) es una <strong>herramienta web interactiva</strong> que extrae relaciones entre especies a partir de la correlación entre las distribuciones geográficas de sus registros. Este modelo de análisis permite ver el conjuntos de datos desde la perspectiva de un sistema de elementos (los taxones) que se interrelacionan.</p>
+
+<p>En esta visión de interconexiones <strong>SpEcIEs</strong> permite dos modos. Analizar todo desde el punto de vista de un taxón (o grupo de taxones) central.</p>
+
+<p>O desde la perspectiva de un red que representa las relaciones entre dos grupos de taxones.</p>
 
 <h2 id="qué-datos-se-pueden-analizar">¿Qué datos se pueden analizar?</h2>
 
 <p><strong>SpEciEs</strong> mantiene una base de datos con aproximadamente <strong>345,000,000</strong> de registros que provienen de los datos de ejemplares en el <a href="http://www.snib.mx/ejemplares/descarga/">SNIB (Sistema Nacional de Información sobre Biodiversidad, CONABIO)</a> para México y datos de <a href="https://www.gbif.org">GBIF</a> para <a href="https://doi.org/10.15468/dl.iixcqe">Estados Unidos contiguo</a>, <a href="https://doi.org/10.15468/dl.r3kg3r">Centroamérica</a> y <a href="https://doi.org/10.15468/dl.menapb">Colombia</a>.</p>
 
-<h2 id="qué-tipo-de-análisis-puedo-hacer-con-species">¿Qué tipo de análisis puedo hacer con SpEcIEs?</h2>
-
-<h3 id="análisis-de-nicho-ecológico-de-una-especie-o-grupo-de-especies-focal">Análisis de nicho ecológico de una especie o grupo de especies focal.</h3>
+<h2 id="qué-tipo-de-preguntas-puedo-hacer-con-species">¿Qué tipo de preguntas puedo hacer con SpEcIEs?</h2>
 
 <p>¿Cómo se relaciona la distribución geográfica de una especie con otros taxones?</p>
 
-<p>¿La distribución de registros de un grupo de especies está más ligada a la distribución de variables climáticas o a las distribuciones de otros grupos de especies?</p>
+<p>¿La distribución de registros de una especie está más ligada a la distribución de variables climáticas o a las distribuciones de otros grupos de especies?</p>
 
 <p>¿Cuáles son las especies de aves con distribuciones más ligadas a mi especie focal?</p>
 
+<h2 id="análisis-de-nicho-ecológico-de-una-especie-o-grupo-de-especies-focal">Análisis de nicho ecológico de una especie o grupo de especies focal.</h2>
+
 <p>En este tipo de análisis definimos una especie (o grupo de especies) focal y analizamos como se relaciona con otros grupos taxonómicos contenidos en la base de datos. Se pueden incluir, además, variables abióticas en el análisis (worldclim, envirem, usgs).</p>
 
-<p>Este análisis obtiene un ranking de especies y variables abioticas de acuerdo a su grado de correlación geográfica con la especie focal y un mapa interactivo con un gradiente que muestra las áreas con características más favorables y  menos favorables en relación a nuestra especie de interés.</p>
+<p>Este análisis obtiene un ranking de especies y variables abioticas de acuerdo a su grado de correlación geográfica con la especie focal y un mapa interactivo con un gradiente que califica las áreas de acuerdo a si sus características parecen más o menos favorables en relación a nuestra especie de interés.</p>
 
 <p><em>Componentes principales</em>: Mapa interactivo y gráfica de barras interactiva para explorar las relaciones de los grupos de especies y variables abióticas con la distribución focal.</p>
 
-<p><img src="/intro/images/nicho.png" alt="" title="http://species.conabio.gob.mx/geoportal_v0.1.html" /></p>
+<table>
+  <tbody>
+    <tr>
+      <td><img src="/intro/images/nicho.png" alt="" title="http://species.conabio.gob.mx/geoportal_v0.1.html" /></td>
+      <td><img src="/intro/images/nicho.png" alt="" title="http://species.conabio.gob.mx/geoportal_v0.1.html" /></td>
+    </tr>
+  </tbody>
+</table>
 
-<h3 id="análisis-de-las-relaciones-entre-dos-grupos-de-especies-con-redes-de-correlación-espacial">Análisis de las relaciones entre dos grupos de especies con redes de correlación espacial.</h3>
+<h2 id="análisis-de-las-relaciones-entre-dos-grupos-de-especies-con-redes-de-correlación-espacial">Análisis de las relaciones entre dos grupos de especies con redes de correlación espacial.</h2>
 
 <p><em>Componentes principales</em>: Red de relaciones interactiva ligada a mapa de riqueza, tabla con rankeo de relaciones entre variables</p>
 
